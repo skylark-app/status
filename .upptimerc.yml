@@ -1,0 +1,26 @@
+owner: skylark-app
+repo: status
+
+sites:
+  - name: Larkline App
+    url: https://larkline.app
+    expectedStatusCodes: [200, 301, 302]
+  - name: API Health
+    url: https://larkline.app/api/health
+    expectedStatusCodes: [200]
+  - name: Login Page
+    url: https://larkline.app/login
+    expectedStatusCodes: [200]
+
+status-website:
+  baseUrl: https://skylark-app.github.io/status
+  name: Larkline Status
+  introTitle: Larkline Service Status
+  introMessage: Real-time uptime for larkline.app and its core services.
+  theme: light
+  navbar:
+    - title: larkline.app
+      href: https://larkline.app
+
+# Upptime also supports notifications, assigning issues, and more
+# See https://upptime.js.org/docs/configuration
